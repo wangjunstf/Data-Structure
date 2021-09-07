@@ -31,6 +31,7 @@ struct TreeNode
     TreeNode *p;
 
     TreeNode(E_COLOR c):color(c) {}
+    TreeNode(int x) : key(x) {}
     TreeNode(int x, E_COLOR c, TreeNode *T) : key(x), left(T), right(T), p(T), color(c) {}
 };
 
