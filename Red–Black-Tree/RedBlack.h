@@ -102,9 +102,9 @@ void
 RBTree::preOrder(TreeNode *root)
 {
     if(root!=nullptr && root->key!=0){
-        preOrder(root->left);
         //cout << "[" << root->key << "," << root->color << "] ";
         cout << root->key << " ";
+        preOrder(root->left);
         preOrder(root->right);
     }
 }
@@ -114,9 +114,9 @@ RBTree::inOrder(TreeNode *root)
 {
     if (root != nullptr && root->key != 0)
     {
-        //cout << "[" << root->key << "," << root->color << "] ";
-        cout<<root->key<<" ";
         inOrder(root->left);
+        //cout << "[" << root->key << "," << root->color << "] ";
+        cout << root->key << " ";
         inOrder(root->right);
     }
 }
